@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{609F1E19-5B62-492E-8BD2-9706F09A3EEE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Otel</RootNamespace>
+    <AssemblyName>Otel</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdapterPattern\MusteriAdapter.cs" />
+    <Compile Include="CommandPattern\IKomut.cs" />
+    <Compile Include="CommandPattern\KlimaAc.cs" />
+    <Compile Include="CommandPattern\KlimaDereceArtir.cs" />
+    <Compile Include="CommandPattern\KlimaDereceAzalt.cs" />
+    <Compile Include="CommandPattern\KlimaKapat.cs" />
+    <Compile Include="CommandPattern\KontrolButon.cs" />
+    <Compile Include="CommandPattern\LobiKlima.cs" />
+    <Compile Include="CommandPattern\KlimaRemote.cs" />
+    <Compile Include="FacadePattern\SinemaOdasi.cs" />
+    <Compile Include="FacadePattern\Dvd.cs" />
+    <Compile Include="FacadePattern\DvdPlayer.cs" />
+    <Compile Include="AdapterPattern\EskiMusteri.cs" />
+    <Compile Include="IteratorPattern\AksamYemegi.cs" />
+    <Compile Include="IteratorPattern\AksamYemegiEnum.cs" />
+    <Compile Include="IteratorPattern\AksamYemegiIterator.cs" />
+    <Compile Include="OdaServisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdaServisi.Designer.cs">
+      <DependentUpon>OdaServisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignletonPattern\IstanbulOtel.cs" />
+    <Compile Include="IstanbulOtell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IstanbulOtell.Designer.cs">
+      <DependentUpon>IstanbulOtell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IteratorPattern\Kahvalti.cs" />
+    <Compile Include="IteratorPattern\KahvaltiEnum.cs" />
+    <Compile Include="IteratorPattern\KahvaltiIterator.cs" />
+    <Compile Include="IteratorPattern\Menu.cs" />
+    <Compile Include="IteratorPattern\OdaServisi.cs" />
+    <Compile Include="FacadePattern\OrtamIsigi.cs" />
+    <Compile Include="AdapterPattern\MusteriKayıtSistemi.cs" />
+    <Compile Include="AdapterPattern\IMusteriler.cs" />
+    <Compile Include="AdapterPattern\YeniMusteri.cs" />
+    <EmbeddedResource Include="IstanbulOtell.resx">
+      <DependentUpon>IstanbulOtell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdaServisi.resx">
+      <DependentUpon>OdaServisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

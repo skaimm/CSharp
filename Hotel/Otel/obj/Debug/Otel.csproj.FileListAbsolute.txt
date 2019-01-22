@@ -1,0 +1,11 @@
+C:\Users\uasmt\source\repos\Otel\Otel\bin\Debug\Otel.exe.config
+C:\Users\uasmt\source\repos\Otel\Otel\bin\Debug\Otel.exe
+C:\Users\uasmt\source\repos\Otel\Otel\bin\Debug\Otel.pdb
+C:\Users\uasmt\source\repos\Otel\Otel\obj\Debug\Otel.Properties.Resources.resources
+C:\Users\uasmt\source\repos\Otel\Otel\obj\Debug\Otel.csproj.GenerateResource.cache
+C:\Users\uasmt\source\repos\Otel\Otel\obj\Debug\Otel.csproj.CoreCompileInputs.cache
+C:\Users\uasmt\source\repos\Otel\Otel\obj\Debug\Otel.exe
+C:\Users\uasmt\source\repos\Otel\Otel\obj\Debug\Otel.pdb
+C:\Users\uasmt\source\repos\Otel\Otel\obj\Debug\Otel.csprojAssemblyReference.cache
+C:\Users\uasmt\source\repos\Otel\Otel\obj\Debug\Otel.IstanbulOtell.resources
+C:\Users\uasmt\source\repos\Otel\Otel\obj\Debug\Otel.OdaServisi.resources

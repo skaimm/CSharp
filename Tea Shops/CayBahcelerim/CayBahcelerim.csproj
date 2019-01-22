@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B9D25FB4-4683-4E89-93FC-408EADB7D225}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CayBahcelerim</RootNamespace>
+    <AssemblyName>CayBahcelerim</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anasayfa.Designer.cs">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EkstraIcerik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EkstraIcerik.Designer.cs">
+      <DependentUpon>EkstraIcerik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FarkliYüzdeGir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FarkliYüzdeGir.Designer.cs">
+      <DependentUpon>FarkliYüzdeGir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FiyatGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiyatGuncelle.Designer.cs">
+      <DependentUpon>FiyatGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fiyatlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fiyatlar.Designer.cs">
+      <DependentUpon>Fiyatlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiparIptal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiparIptal.Designer.cs">
+      <DependentUpon>SiparIptal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SiparisDuzelt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiparisDuzelt.Designer.cs">
+      <DependentUpon>SiparisDuzelt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Siparislerim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Siparislerim.Designer.cs">
+      <DependentUpon>Siparislerim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SipariVer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SipariVer.Designer.cs">
+      <DependentUpon>SipariVer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubeIcerik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubeIcerik.Designer.cs">
+      <DependentUpon>SubeIcerik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sınıflar\Abstract Factory Pattern\Icerikler\EskiKasar.cs" />
+    <Compile Include="Sınıflar\Abstract Factory Pattern\Icerikler\Hardal.cs" />
+    <Compile Include="Sınıflar\Abstract Factory Pattern\Icerikler\BlokKasar.cs" />
+    <Compile Include="Sınıflar\Abstract Factory Pattern\Icerikler\HindiSalam.cs" />
+    <Compile Include="Sınıflar\Abstract Factory Pattern\Icerikler\Interfaces\IEkstralar.cs" />
+    <Compile Include="Sınıflar\Abstract Factory Pattern\Iicindekiler.cs" />
+    <Compile Include="Sınıflar\Abstract Factory Pattern\Icerikler\Interfaces\IKasar.cs" />
+    <Compile Include="Sınıflar\Abstract Factory Pattern\Icerikler\Interfaces\ISalam.cs" />
+    <Compile Include="Sınıflar\Abstract Factory Pattern\Icerikler\Interfaces\ISucuk.cs" />
+    <Compile Include="Sınıflar\Abstract Factory Pattern\KadikoySube.cs" />
+    <Compile Include="Sınıflar\Abstract Factory Pattern\Icerikler\Ketcap.cs" />
+    <Compile Include="Sınıflar\Abstract Factory Pattern\Icerikler\Mayonez.cs" />
+    <Compile Include="Sınıflar\Abstract Factory Pattern\Icerikler\KangalSucuk.cs" />
+    <Compile Include="Sınıflar\Abstract Factory Pattern\Icerikler\PilicSalam.cs" />
+    <Compile Include="Sınıflar\Abstract Factory Pattern\TaksimSube.cs" />
+    <Compile Include="Sınıflar\Abstract Factory Pattern\Icerikler\VartanyaSucuk.cs" />
+    <Compile Include="Sınıflar\Abstract Factory Pattern\Icerikler\Tursu.cs" />
+    <Compile Include="Sınıflar\Decorator Pattern\CondimentDecorator\Katkılar\Bal.cs" />
+    <Compile Include="Sınıflar\Decorator Pattern\CondimentDecorator\Katkılar\Limon.cs" />
+    <Compile Include="Sınıflar\Observer Pattern\FiyatListesi.cs" />
+    <Compile Include="Sınıflar\Observer Pattern\IObserver.cs" />
+    <Compile Include="Sınıflar\Observer Pattern\ISubject.cs" />
+    <Compile Include="Sınıflar\SiparisSinif.cs" />
+    <Compile Include="Sınıflar\Strategy Pattern\Ozelllik.cs" />
+    <Compile Include="Sınıflar\İcecek\Ihlamur.cs" />
+    <Compile Include="Sınıflar\Decorator Pattern\CondimentDecorator\KatkiDecorator.cs" />
+    <Compile Include="Sınıflar\İcecek\IcecekSinif.cs" />
+    <Compile Include="Sınıflar\İcecek\Oralet.cs" />
+    <Compile Include="Sınıflar\İcecek\SiyahCay.cs" />
+    <Compile Include="Sınıflar\Factory Method Pattern\KadikoyCayBahcesi.cs" />
+    <Compile Include="Sınıflar\Factory Method Pattern\TaksimCayBahcesi.cs" />
+    <Compile Include="Sınıflar\Tost\AyvalikTostu.cs" />
+    <Compile Include="Sınıflar\Tost\KarisikTost.cs" />
+    <Compile Include="Sınıflar\Factory Method Pattern\SiparisFactory.cs" />
+    <Compile Include="Sınıflar\Tost\KasarliTost.cs" />
+    <Compile Include="Sınıflar\Tost\TostSinif.cs" />
+    <EmbeddedResource Include="Anasayfa.resx">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EkstraIcerik.resx">
+      <DependentUpon>EkstraIcerik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FarkliYüzdeGir.resx">
+      <DependentUpon>FarkliYüzdeGir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FiyatGuncelle.resx">
+      <DependentUpon>FiyatGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fiyatlar.resx">
+      <DependentUpon>Fiyatlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SiparIptal.resx">
+      <DependentUpon>SiparIptal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiparisDuzelt.resx">
+      <DependentUpon>SiparisDuzelt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Siparislerim.resx">
+      <DependentUpon>Siparislerim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SipariVer.resx">
+      <DependentUpon>SipariVer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubeIcerik.resx">
+      <DependentUpon>SubeIcerik.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
